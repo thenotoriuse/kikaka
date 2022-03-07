@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+      <div class="d1">A</div>
+      <div class="d2">B</div>
+      <div class="d3">C</div>
+      <div class="d4">D</div>
+      <div class="d5">E</div>
+      <div class="d6"></div>
+  </div>
+  <style>
+        .d1 {background: lightblue; grid-area: 2/1 }
+        .d2 {background: orange;  }
+        .d3 {background: black;   }
+        .d4 {background: blue; grid-area:1/1/2/4  }
+        /* 1 nishnavs pirvel striqonze kide erti nishnavs pirveli striqonit pirvel XAZZE xolo mesame 1 nishnavs meore striqonidan chasmas nebimsieri ricxvis xolo 4 am shemtxvevashi nishnavs mtel zomasa anu headers */
+        .d5 {background: pink;  }
+        
+        .d6 {background: yellow;  }
+             
+          .container {
+              
+            min-height: 300px;
+            width: 50%;
+            background-color: lightgray;
+            display: grid;
+            grid-template-rows: 100px 100px 100px;
+            gap: 4px 50px;
+            
+            
+
+             
+            grid-template-areas:  
+           "header header header "  
+           
+           "advert content content" 
+           "footer footer footer";
+           
+              
+              
+          }
+  </style>
+
+  </div>
+</body>
+</html>
